@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { COLORS, FONTS } from "../constants/theme";
 
-//Global
-
 export const MenuCon = styled.div`
   background: ${COLORS.PrimaryDark};
   position: absolute;

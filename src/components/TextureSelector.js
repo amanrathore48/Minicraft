@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useStore } from "../hooks/useStore";
 import { useKeyboard } from "../hooks/useKeyboard";
 import { dirtImg, grassImg, glassImg, logImg, woodImg } from "../images/images";
+import { SelectorCon } from "./TextureSelectorStyles";
 
 const images = {
   dirt: dirtImg,
@@ -45,7 +46,7 @@ export const TextureSelector = () => {
 
   return (
     visible && (
-      <div className="absolute centered texture-selector">
+      <SelectorCon>
         {Object.entries(images).map(([k, src]) => {
           return (
             <img
@@ -56,7 +57,7 @@ export const TextureSelector = () => {
             />
           );
         })}
-      </div>
+      </SelectorCon>
     )
   );
 };

@@ -52,15 +52,3 @@ body {
   color: white;
 }
 
-.texture-selector {
-  transform: scale(5);
-}
-
-.texture-selector img.active {
-  border: 2px solid red;
-}
-
-.menu {
-  top: 0px;
-  left: 10px;
-}
